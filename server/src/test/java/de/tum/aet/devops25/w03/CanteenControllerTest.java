@@ -85,7 +85,7 @@ public class CanteenControllerTest {
 
         // Assert
         assertThat(actualTodayDishes).hasSize(2);
-        var actualDish1 = actualTodayDishes.getFirst();
+        var actualDish1 = actualTodayDishes.get(0);
         assertThat(actualDish1.name()).isEqualTo("Vegetarian Pasta");
         assertThat(actualDish1.dish_type()).isEqualTo("Main Dish");
         var actualDish2 = actualTodayDishes.get(1);
